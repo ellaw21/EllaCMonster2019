@@ -24,6 +24,8 @@ public class IntakeSubsystem extends Subsystem {
   private final Compressor compressor = RobotMap.theCompressor;
   private final DoubleSolenoid flapSolenoid = RobotMap.flapOpenSolenoid;
 
+  public static Spark intakeSpark = RobotMap.intakeSpark;
+
   public void FlapOpen() {
 
     flapSolenoid.set(DoubleSolenoid.Value.kForward);
@@ -34,16 +36,15 @@ public class IntakeSubsystem extends Subsystem {
     flapSolenoid.set(DoubleSolenoid.Value.kReverse);
   }
 
-  //Spark intakeSpark = RobotMap.IntakeSpark;
 
   public void StartIntake() {
 
-    //intakeSpark.set(1);
+    intakeSpark.set(1);
   }
 
   public void StopIntake() {
 
-    //intakeSpark.set(0);
+    intakeSpark.set(0);
   }
 
 

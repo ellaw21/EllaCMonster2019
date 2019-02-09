@@ -23,11 +23,13 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
  */
 public class RobotMap {
 
-public static Compressor theCompressor;
-public static DoubleSolenoid shootHatchSolenoid;
-public static Solenoid launchCatapultSolenoid;
-public static DoubleSolenoid flapOpenSolenoid;
-public static Solenoid pushHatchSolenoid;
+public static Compressor theCompressor = new Compressor(0);
+public static DoubleSolenoid shootHatchSolenoid = new DoubleSolenoid(0,1);
+public static Solenoid launchCatapultSolenoid = new Solenoid(2);
+public static DoubleSolenoid flapOpenSolenoid = new DoubleSolenoid(3,4);
+public static Solenoid pushHatchSolenoid = new Solenoid(5);
+
+
 
 
   public static WPI_TalonSRX leftFront = new WPI_TalonSRX(2); //should be 2 for 2019
@@ -46,6 +48,11 @@ public static Solenoid pushHatchSolenoid;
   // public static int rangefinderPort = 1;
   // public static int rangefinderModule = 1;
 
-public static SpeedController shooterSpark = new Spark(0);
+public static SpeedController shooterSpark = new Spark(2);
 public static SpeedController hatchSpark = new Spark(1);
+public static Spark intakeSpark = new Spark(0);
+
+boolean enabled = theCompressor.enabled();
+boolean pressureSwitch = theCompressor.getPressureSwitchValue();
+double current = theCompressor.getCompressorCurrent();
 }

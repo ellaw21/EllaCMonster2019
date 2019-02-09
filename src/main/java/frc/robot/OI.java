@@ -68,12 +68,12 @@ public static final Joystick logitech = new Joystick(2);
 
 
   public OI() {
-    ShooterButton = new JoystickButton(logitech, 1);
+    // ShooterButton = new JoystickButton(logitech, 1);
 
-    HatchButton = new JoystickButton(logitech, 2);
+    // HatchButton = new JoystickButton(logitech, 3);
 
-    //openHatchButton = new JoystickButton(logitech, 3);
-    //closeHatchButton = new JoystickButton(logitech, 4);
+    openHatchButton = new JoystickButton(logitech, 9);
+    closeHatchButton = new JoystickButton(logitech, 10);
 
     launchCatapultButton = new JoystickButton(logitech, 5);
     retractCatapultButton = new JoystickButton(logitech, 7);
@@ -96,9 +96,9 @@ public static final Joystick logitech = new Joystick(2);
 
 // HatchButton.whenReleased(new StopHatchCommand());
 
-// IntakeButton.whileHeld(new StartIntakeCommand());
+IntakeButton.whileHeld(new StartIntakeCommand());
 
-// IntakeButton.whenReleased(new StopIntakeCommand());
+IntakeButton.whenReleased(new StopIntakeCommand());
 
 
     

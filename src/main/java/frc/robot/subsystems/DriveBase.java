@@ -13,6 +13,7 @@ import frc.robot.commands.*;
 import frc.robot.RobotMap;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
+import frc.robot.JoystickSensitivity;
 
 /**
  * Add your docs here.
@@ -42,6 +43,10 @@ public class DriveBase extends Subsystem {
     rightMotorSpeed = rightJoystick.getY() * -1;
     leftMotorSpeed = leftJoystick.getY();
 
+    // leftMotorSpeed = joystickSensitivity.GetOutput(leftMotorSpeed);
+    // rightMotorSpeed = joystickSensitivity.GetOutput(rightMotorSpeed);
+  
+
     rightTalon.set(rightMotorSpeed);
     leftTalon.set(leftMotorSpeed);
 
@@ -51,5 +56,14 @@ public class DriveBase extends Subsystem {
 
 //Assign values for joysticks to motor controllers
   } 
+
+  public void enableDriveBase(){
+
+  }
+
+
+  public void diableDriveBase(){
+
+  }
 }
 

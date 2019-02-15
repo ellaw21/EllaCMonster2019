@@ -49,12 +49,12 @@ public static final Joystick leftJoystick = new Joystick(1);
 public static final Joystick logitech = new Joystick(2);
 
 
-  JoystickButton ShooterButton;
+  // JoystickButton ShooterButton;
 
-  JoystickButton HatchButton;
+  // JoystickButton HatchButton;
 
-  JoystickButton openHatchButton;
-  JoystickButton closeHatchButton;
+  // JoystickButton openHatchButton;
+  // JoystickButton closeHatchButton;
 
   JoystickButton launchCatapultButton;
   JoystickButton retractCatapultButton;
@@ -72,8 +72,8 @@ public static final Joystick logitech = new Joystick(2);
 
     // HatchButton = new JoystickButton(logitech, 3);
 
-    openHatchButton = new JoystickButton(logitech, 9);
-    closeHatchButton = new JoystickButton(logitech, 10);
+    // openHatchButton = new JoystickButton(logitech, 9);
+    // closeHatchButton = new JoystickButton(logitech, 10);
 
     launchCatapultButton = new JoystickButton(logitech, 5);
     retractCatapultButton = new JoystickButton(logitech, 7);

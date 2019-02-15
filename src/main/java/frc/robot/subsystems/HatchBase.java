@@ -19,19 +19,19 @@ import edu.wpi.first.wpilibj.Solenoid;
 public class HatchBase extends Subsystem {
 
   private final Compressor compressor = RobotMap.theCompressor;
-  private final DoubleSolenoid shootSolenoid = RobotMap.shootHatchSolenoid;
+  // private final DoubleSolenoid shootSolenoid = RobotMap.shootHatchSolenoid;
   private final Solenoid pushSolenoid = RobotMap.pushHatchSolenoid;
 
 
-  public void OpenHatch() {
+  // public void OpenHatch() {
 
-    shootSolenoid.set(DoubleSolenoid.Value.kForward);
-  }
+  //   shootSolenoid.set(DoubleSolenoid.Value.kForward);
+  // }
 
-  public void CloseHatch() {
+  // public void CloseHatch() {
 
-    shootSolenoid.set(DoubleSolenoid.Value.kReverse);
-  }
+  //   shootSolenoid.set(DoubleSolenoid.Value.kReverse);
+  // }
 
   public void PushHatch() {
 

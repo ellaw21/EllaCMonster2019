@@ -24,10 +24,10 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
 public class RobotMap {
 
 public static Compressor theCompressor = new Compressor(0);
-public static DoubleSolenoid shootHatchSolenoid = new DoubleSolenoid(0,1);
-public static Solenoid launchCatapultSolenoid = new Solenoid(2);
-public static DoubleSolenoid flapOpenSolenoid = new DoubleSolenoid(3,4);
-public static Solenoid pushHatchSolenoid = new Solenoid(5);
+// public static DoubleSolenoid shootHatchSolenoid = new DoubleSolenoid(0,1);
+public static Solenoid launchCatapultSolenoid = new Solenoid(0);
+public static DoubleSolenoid flapOpenSolenoid = new DoubleSolenoid(1,2);
+public static Solenoid pushHatchSolenoid = new Solenoid(3);
 
 
 

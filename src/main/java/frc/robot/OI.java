@@ -100,6 +100,15 @@ IntakeButton.whileHeld(new StartIntakeCommand());
 
 IntakeButton.whenReleased(new StopIntakeCommand());
 
+launchCatapultButton.whenPressed(new LaunchCatapult());
+
+retractCatapultButton.whenPressed(new RetractCatapult());
+
+pushHatchButton.whenPressed(new ShootHatch());
+
+retractHatchButton.whenPressed(new RetractHatch());
+
+
 
     
   }

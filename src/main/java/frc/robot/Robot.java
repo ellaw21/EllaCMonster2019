@@ -32,9 +32,9 @@ public class Robot extends TimedRobot {
   public static ShooterSubsystem shooterSubsystem = new ShooterSubsystem();
   public static HatchSubsystem hatchSubsystem = new HatchSubsystem();
 
-  public static HatchBase hatchBase;
+  public static HatchBase hatchBase = new HatchBase();
 
-  public static CatapultBase catapultBase;
+  public static CatapultBase catapultBase = new CatapultBase();
 
   public static IntakeSubsystem intakeSubsystem = new IntakeSubsystem();
 

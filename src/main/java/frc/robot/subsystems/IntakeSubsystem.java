@@ -22,24 +22,24 @@ public class IntakeSubsystem extends Subsystem {
   // here. Call these from Commands.
 
   private final Compressor compressor = RobotMap.theCompressor;
-  private final DoubleSolenoid flapSolenoid = RobotMap.flapOpenSolenoid;
+  // private final DoubleSolenoid flapSolenoid = RobotMap.flapOpenSolenoid;
 
   public static Spark intakeSpark = RobotMap.intakeSpark;
 
-  public void FlapOpen() {
+  // public void FlapOpen() {
 
-    flapSolenoid.set(DoubleSolenoid.Value.kForward);
-  }
+  //   flapSolenoid.set(DoubleSolenoid.Value.kForward);
+  // }
 
-  public void FlapReverse() {
+  // public void FlapReverse() {
 
-    flapSolenoid.set(DoubleSolenoid.Value.kReverse);
-  }
+  //   flapSolenoid.set(DoubleSolenoid.Value.kReverse);
+  // }
 
 
   public void StartIntake() {
 
-    intakeSpark.set(1);
+    intakeSpark.set(-0.75);
   }
 
   public void StopIntake() {

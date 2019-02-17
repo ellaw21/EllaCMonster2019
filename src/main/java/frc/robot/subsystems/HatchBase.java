@@ -20,7 +20,7 @@ public class HatchBase extends Subsystem {
 
   private final Compressor compressor = RobotMap.theCompressor;
   // private final DoubleSolenoid shootSolenoid = RobotMap.shootHatchSolenoid;
-  private final Solenoid pushSolenoid = RobotMap.pushHatchSolenoid;
+  private final DoubleSolenoid pushSolenoid = RobotMap.pushHatchSolenoid;
 
 
   // public void OpenHatch() {
@@ -35,12 +35,12 @@ public class HatchBase extends Subsystem {
 
   public void PushHatch() {
 
-    pushSolenoid.set(true);
+    pushSolenoid.set(DoubleSolenoid.Value.kForward);
   }
 
   public void RetractHatch() {
 
-    pushSolenoid.set(false);
+    pushSolenoid.set(DoubleSolenoid.Value.kReverse);
   }
   // Put methods for controlling this subsystem
   // here. Call these from Commands.

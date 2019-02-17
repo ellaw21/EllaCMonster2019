@@ -44,9 +44,6 @@ public class OI {
   // until it is finished as determined by it's isFinished method.
   // button.whenReleased(new ExampleCommand());
 
-public static final Joystick rightJoystick = new Joystick(0);
-public static final Joystick leftJoystick = new Joystick(1);
-public static final Joystick logitech = new Joystick(2);
 
 
   // JoystickButton ShooterButton;
@@ -56,15 +53,19 @@ public static final Joystick logitech = new Joystick(2);
   // JoystickButton openHatchButton;
   // JoystickButton closeHatchButton;
 
-  JoystickButton launchCatapultButton;
-  JoystickButton retractCatapultButton;
+  public Joystick rightJoystick;
+  public Joystick leftJoystick;
+  public Joystick logitech;
 
-  JoystickButton IntakeButton;
-  JoystickButton flapOpenButton;
-  JoystickButton flapReverseButton;
+  public JoystickButton launchCatapultButton;
+  public JoystickButton retractCatapultButton;
 
-  JoystickButton pushHatchButton;
-  JoystickButton retractHatchButton;
+  public JoystickButton IntakeButton;
+  public JoystickButton flapOpenButton;
+  public JoystickButton flapReverseButton;
+
+  public JoystickButton pushHatchButton;
+  public JoystickButton retractHatchButton;
 
 
   public OI() {
@@ -75,16 +76,20 @@ public static final Joystick logitech = new Joystick(2);
     // openHatchButton = new JoystickButton(logitech, 9);
     // closeHatchButton = new JoystickButton(logitech, 10);
 
+  rightJoystick = new Joystick(0);
+  leftJoystick = new Joystick(1);
+  logitech = new Joystick(2);
+
     launchCatapultButton = new JoystickButton(logitech, 5);
     retractCatapultButton = new JoystickButton(logitech, 7);
 
-    flapOpenButton = new JoystickButton(logitech, 4);
-    flapReverseButton = new JoystickButton(logitech, 2);
+    // flapOpenButton = new JoystickButton(logitech, 4);
+    // flapReverseButton = new JoystickButton(logitech, 2);
 
     pushHatchButton = new JoystickButton(logitech, 6);
     retractHatchButton = new JoystickButton(logitech, 8);
 
-    IntakeButton = new JoystickButton(rightJoystick, 2);
+    IntakeButton = new JoystickButton(logitech, 2);
 
 
 // MOST IMPORTANT PART: Link the button to the command

@@ -50,8 +50,8 @@ public class OI {
 
   // JoystickButton HatchButton;
 
-  // JoystickButton openHatchButton;
-  // JoystickButton closeHatchButton;
+  JoystickButton openHatchButton;
+  JoystickButton closeHatchButton;
 
   public Joystick rightJoystick;
   public Joystick leftJoystick;
@@ -73,8 +73,8 @@ public class OI {
 
     // HatchButton = new JoystickButton(logitech, 3);
 
-    // openHatchButton = new JoystickButton(logitech, 9);
-    // closeHatchButton = new JoystickButton(logitech, 10);
+    openHatchButton = new JoystickButton(logitech, 9);
+    closeHatchButton = new JoystickButton(logitech, 10);
 
   rightJoystick = new Joystick(0);
   leftJoystick = new Joystick(1);
@@ -112,6 +112,10 @@ retractCatapultButton.whenPressed(new RetractCatapult());
 pushHatchButton.whenPressed(new ShootHatch());
 
 retractHatchButton.whenPressed(new RetractHatch());
+
+openHatchButton.whenPressed(new StartHatchCommand());
+
+closeHatchButton.whenPressed(new StopHatchCommand());
 
 
 
